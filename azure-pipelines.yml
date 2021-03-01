@@ -1,0 +1,16 @@
+name: 'Build UIPath Library'
+
+trigger:
+- master
+
+pool:
+  vmimage: 'windows-latest'
+
+steps:
+- task: UiPathPack@2
+  displayName: 'Package the Fluxys Library'
+  inputs:
+    versionType: AutoVersion
+    projectJsonPath: '$(Build.SourcesDirectory)'
+    outputType: Library
+    outputPath: '$(Build.ArtifactStagingDirectory)\FluxysLibrary'
