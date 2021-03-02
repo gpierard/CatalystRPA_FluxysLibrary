@@ -15,7 +15,7 @@
     <x:Null />
   </mva:VisualBasic.Settings>
   <sap2010:Annotation.AnnotationText>UPTF000000CCeyI8SGVscExpbms+a19fQmFja2luZ0ZpZWxkIjpudWxsLCI8SW5pdGlhbFRvb2x0aXA+a19fQmFja2luZ0ZpZWxkIjoiUmVhZCBDb25maWcgRGF0YSBmcm9tIGFuIGV4Y2VsIGZpbGUgaW50byBhIERpY3Rpb25hcnkiLCI8VmVyc2lvbj5rX19CYWNraW5nRmllbGQiOjF9</sap2010:Annotation.AnnotationText>
-  <sap:VirtualizedContainerService.HintSize>770,967</sap:VirtualizedContainerService.HintSize>
+  <sap:VirtualizedContainerService.HintSize>845,967</sap:VirtualizedContainerService.HintSize>
   <sap2010:WorkflowViewState.IdRef>ReadConfig_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <scg:List x:TypeArguments="x:String" Capacity="42">
@@ -100,7 +100,7 @@
         <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[new Dictionary( Of String, Object)]</InArgument>
       </Assign.Value>
     </Assign>
-    <ui:ReadCsvFile Encoding="{x:Null}" DataTable="[ConfigDT]" Delimitator="Semicolon" DisplayName="Read CSV" FilePath="[ConfigFileName]" sap:VirtualizedContainerService.HintSize="490,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
+    <ui:ReadCsvFile DataTable="[ConfigDT]" Delimitator="Semicolon" DisplayName="Read CSV" Encoding="utf-8" FilePath="[ConfigFileName]" sap:VirtualizedContainerService.HintSize="490,152" sap2010:WorkflowViewState.IdRef="ReadCsvFile_1" />
     <ui:ForEachRow CurrentIndex="{x:Null}" DataTable="[ConfigDT]" DisplayName="For Each Row" sap:VirtualizedContainerService.HintSize="490,378" sap2010:WorkflowViewState.IdRef="ForEachRow_1">
       <ui:ForEachRow.Body>
         <ActivityAction x:TypeArguments="sd:DataRow">
